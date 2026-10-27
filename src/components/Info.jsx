@@ -1,13 +1,11 @@
-import Todos from './components/Todos.jsx'
-import Info from './components/Info.jsx'
-
-function App() {
+function Info({ name }) {
   return (
-    <div className="min-h-screen bg-[#f5f5f5] py-8 font-light text-[#111]">
-      <Todos />
-      <Info name="Bryne Kendrick P. Nunez" />
-    </div>
+    <footer className="mt-16 text-center text-[11px] text-[#4d4d4d]">
+      <p className="my-3">Click the box to complete a todo</p>
+      <p className="my-3">Created by {name}</p>
+      <p className="my-3">Inspired by TodoMVC</p>
+    </footer>
   )
 }
 
-export default App
+export default Info
